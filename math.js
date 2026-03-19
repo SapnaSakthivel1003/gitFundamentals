@@ -1,24 +1,39 @@
-const add=(a,b)=>{
-    return a+b;
+let input="  sapna   ";
+
+const reverse=(value)=>{
+   let reverse="";
+    for(let char of value){
+        reverse=char+reverse;
+
+    }
+
+    return reverse;
+
 }
-console.log(add(10,5));
+console.log(reverse(input));
 
-const sub=(a,b)=>{
-    return a-b;
+const trims=(value)=>{
+return value.trim();
+
 }
-console.log(sub(10,5));
+console.log(trims(input));
 
+const capitalize=(value)=>{
+   let caps="";
+    for(let char in value){
+        if(char==0){
+          let func= value[char].toUpperCase();
+            caps+=func+caps;
+            
+        }
+        else{
+                  caps+=value[char];
+        }
+   
 
-const mul=(a,b)=>{
-    console.log(a);
-    console.log(b);
-    return a*b;
+    }
+
+    return caps;
+
 }
-console.log(mul(10,5));
-console.log("hello");
-
-
-const div=(a,b)=>{
-    return a/b;
-}
-console.log(div(10,5));
+console.log(capitalize("sapna"));
