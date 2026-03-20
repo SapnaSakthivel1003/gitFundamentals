@@ -24,7 +24,7 @@ const capitalize=(value)=>{
         if(char==0){
           let func= value[char].toUpperCase();
             caps+=func+caps;
-        
+            
         }
         else{
                   caps+=value[char];
