@@ -1,6 +1,6 @@
 const sapna=()=>{
-    let a=10;
-    let b=38;
+    let a=20;
+    let b=40;
     let c="abc"
     return c+a+b;
 }
